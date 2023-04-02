@@ -34,3 +34,11 @@
     line-height: 1.5;
     letter-spacing: 2px;
 }
+.desactive{
+    text-decoration: none;
+    color: black;
+}
+.activeLink{
+    text-decoration: none;
+    color: white;
+}
