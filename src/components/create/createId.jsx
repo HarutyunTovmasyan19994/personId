@@ -1,19 +1,13 @@
-import React, {ChangeEvent, useState} from "react";
-import {initialState} from "./initialState";
+import React from "react";
 import {useForm,Controller} from "react-hook-form";
 import CustomInput from "../customInpust/customInput";
 import {Radio} from "antd"
 import "./create.css"
 const CreateId = () => {
-    const [user, setUser] = useState<Object>(initialState)
     const {control, handleSubmit, formState: {errors}} = useForm()
 
 
-    // const createHandle = (e: ChangeEvent<HTMLInputElement>) => {
-    //     const {name, value} = e.target
-    //     setUser({...user, [name]: value})
-    // }
-    const createHandle =(data:any)=>{
+    const createHandle =(data)=>{
         console.log(data)
     }
     return (
@@ -56,7 +50,7 @@ const CreateId = () => {
                             control={control}
                             name="AntdRadio"
                             render={({ field: { onChange, value } }) => (
-                                <Radio.Group value={value} onChange={(e:any) => onChange(e.target.value)}>
+                                <Radio.Group value={value} onChange={(e) => onChange(e.target.value)}>
                                     <Radio value="Male">Male</Radio>
                                     <Radio value="Female">Female</Radio>
                                 </Radio.Group>

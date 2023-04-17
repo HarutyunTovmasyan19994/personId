@@ -2,7 +2,7 @@ import React from "react";
 import {Controller} from "react-hook-form";
 
 
-const CustomInput = ({name, placeholder, type, control, styles, label, rules = {}}: any) => {
+const CustomInput = ({name, placeholder, type, control, styles, label, rules = {}}) => {
     return (
         <Controller
             name={name}

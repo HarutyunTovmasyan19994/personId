@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 import "./header.css"
 
 const Header = () => {
-    const [isActive, setActive] = useState<boolean>(false)
+    const [isActive, setActive] = useState(false)
     const isActiveHandle = () => {
         setActive(prev => !prev)
     }
@@ -16,8 +16,11 @@ const Header = () => {
                 <ul>
                     <li>Table</li>
                     <li>Person Id</li>
-                    <li><Link to="create" className={isActive ? "activeLink" : "desactive"} onClick={isActiveHandle}>Create
-                        Id</Link></li>
+                    <li>
+                        <Link to="create" className={isActive ? "activeLink" : "desactive"} onClick={isActiveHandle}>
+                            Create Id
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </div>
