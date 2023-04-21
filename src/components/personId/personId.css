@@ -1,0 +1,62 @@
+.common1{
+    width: 100%;    
+    border-radius: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.personId1{
+    width: 30%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.personId2{
+    width: 70%;
+}
+.IDPerson{
+    width: 280px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ID{
+    margin-top: 50px;
+    box-shadow: 2px 7px 54px 0 rgba(0,1,1,0.58);
+    -webkit-box-shadow: 2px 7px 54px 0 rgba(0,1,1,0.58);
+    -moz-box-shadow: 2px 7px 54px 0 rgba(0,1,1,0.58);
+    border-radius: 20px;
+    padding: 10px;
+}
+.img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.editDelete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.edit{
+    padding: 6px 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.edit:active{
+    background-color: green;
+}
+.delete{
+    padding: 6px 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.delete:active{
+    background-color: red;
+}
+.spanName{
+padding-left: 10px;
+}
